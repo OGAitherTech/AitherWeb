@@ -2,29 +2,31 @@
 
 Aither Web is a fast, clean, responsive web launchpad for the Aither project family. It works on iPhone, iPad, and desktop browsers and can be hosted directly with GitHub Pages.
 
-## v2
+## v3
 
 - Google is the automatic search engine
-- Search box and address bar support Google searches
+- Browser-style back, forward, and home controls
+- Search/address bar with quick clear button
 - Website addresses open directly
 - Up to 100 local history entries
-- History records searches and website visits with date/time
-- Delete individual history entries
-- Clear all history
-- Click history entries to revisit them
-- Quick links and bookmarks
+- History records searches and website visits with date/time and hostname
+- Delete individual history entries or clear all history
+- Empty-state history screen
+- Quick buttons for Recent History and Bookmarks
+- Quick-link numbering for keyboard-friendly navigation
+- Bookmarks with add/remove controls
 - Dark, light, and system themes
 - Optional new-tab behavior
-- Responsive mobile layout with slide-out sidebar
-- Settings panel
+- Improved mobile/iPhone layout
+- Polished cards, controls, spacing, hover states, and responsive behavior
 - LocalStorage persistence
 - No backend or build step required
 
 ## Files
 
-- `index.html` — application structure and UI
+- `index.html` — application structure and browser-style UI
 - `style.css` — responsive Aither Web interface
-- `app.js` — search, navigation, bookmarks, history, themes, and settings
+- `app.js` — navigation, Google search, bookmarks, history, themes, and settings
 
 ## GitHub Pages
 
@@ -36,7 +38,7 @@ Bookmarks, settings, and history are stored locally in the browser's LocalStorag
 
 ## Roadmap
 
-Future versions can add tabs, a more complete browser-style toolbar, customizable quick links, import/export, keyboard shortcuts, and additional Aither integrations.
+Future versions can add tab management, customizable quick links, import/export, keyboard shortcuts, and additional Aither integrations.
 
 ## License
 
