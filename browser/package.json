@@ -1,21 +1,2 @@
 {
-  "name": "aither-browser",
-  "version": "1.0.0",
-  "description": "Aither Browser — a lightweight desktop browser built with Electron.",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron .",
-    "dev": "electron .",
-    "build": "electron-builder"
-  },
-  "devDependencies": {
-    "electron": "^38.0.0",
-    "electron-builder": "^26.0.0"
-  },
-  "build": {
-    "appId": "tech.aither.browser",
-    "productName": "Aither Browser",
-    "files": ["**/*"],
-    "win": {"target": "nsis"}
-  }
-}
+  "name":"aither-browser","version":"2.0.0","description":"Aither Browser — a lightweight desktop browser built with Electron.","main":"main.js","scripts":{"start":"electron .","dev":"electron .","build":"electron-builder"},"devDependencies":{"electron":"^38.0.0","electron-builder":"^26.0.0"},"build":{"appId":"tech.aither.browser","productName":"Aither Browser","files":["**/*"],"win":{"target":"nsis"},"mac":{"target":"dmg"},"linux":{"target":"AppImage"}}}
