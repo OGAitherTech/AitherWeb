@@ -17,53 +17,28 @@
         <button class="nav-item" data-view="bookmarks"><span>☆</span> Bookmarks</button>
         <button class="nav-item" data-view="history"><span>◷</span> History</button>
       </nav>
-      <div class="sidebar-bottom">
-        <button class="nav-item" id="settingsBtn"><span>⚙</span> Settings</button>
-      </div>
+      <div class="sidebar-bottom"><button class="nav-item" id="settingsBtn"><span>⚙</span> Settings</button></div>
     </aside>
-
     <main class="main">
       <header class="topbar">
         <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
-        <div class="address-pill"><span class="lock">⌁</span><input id="addressInput" aria-label="Search or enter address" placeholder="Search the web or enter a URL" autocomplete="off"><button id="goBtn">Go</button></div>
+        <div class="address-pill"><span class="lock">⌁</span><input id="addressInput" aria-label="Search or enter address" placeholder="Search Google or enter a URL" autocomplete="off"><button id="goBtn">Go</button></div>
         <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">◐</button>
       </header>
-
       <section class="content" id="content">
         <div class="home-view" id="homeView">
           <div class="hero">
-            <div class="hero-orb"><span>A</span></div>
-            <p class="eyebrow">AITHER WEB</p>
-            <h1>Where do you want to go?</h1>
-            <p class="subtitle">A clean, fast starting point for the web.</p>
-            <form class="search-box" id="searchForm">
-              <span>⌕</span><input id="searchInput" placeholder="Search with DuckDuckGo" autocomplete="off"><button type="submit">Search</button>
-            </form>
+            <div class="hero-orb"><span>A</span></div><p class="eyebrow">AITHER WEB</p><h1>Where do you want to go?</h1><p class="subtitle">Search the web with Google.</p>
+            <form class="search-box" id="searchForm"><span>⌕</span><input id="searchInput" placeholder="Search with Google" autocomplete="off"><button type="submit">Search</button></form>
           </div>
-
-          <div class="quick-section">
-            <div class="section-heading"><h2>Quick links</h2><button id="addBookmark">+ Add</button></div>
-            <div class="quick-grid" id="quickGrid"></div>
-          </div>
+          <div class="quick-section"><div class="section-heading"><h2>Quick links</h2><button id="addBookmark">+ Add</button></div><div class="quick-grid" id="quickGrid"></div></div>
         </div>
-
         <div class="panel-view hidden" id="bookmarksView"><h2>Bookmarks</h2><p class="muted">Your saved shortcuts appear here.</p><div class="bookmark-list" id="bookmarkList"></div></div>
-        <div class="panel-view hidden" id="historyView"><div class="section-heading"><div><h2>History</h2><p class="muted">Recent searches and visits on this device.</p></div><button id="clearHistory">Clear</button></div><div class="history-list" id="historyList"></div></div>
+        <div class="panel-view hidden" id="historyView"><div class="section-heading"><div><h2>History</h2><p class="muted">Recent searches and visits saved on this device.</p></div><button id="clearHistory">Clear</button></div><div class="history-list" id="historyList"></div></div>
       </section>
     </main>
   </div>
-
-  <div class="modal hidden" id="settingsModal" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
-    <div class="modal-card">
-      <div class="modal-head"><h2 id="settingsTitle">Settings</h2><button class="icon-btn" id="closeSettings">×</button></div>
-      <label class="setting"><span><b>Theme</b><small>Choose how Aither Web looks.</small></span><select id="themeSelect"><option value="system">System</option><option value="dark">Dark</option><option value="light">Light</option></select></label>
-      <label class="setting"><span><b>Search engine</b><small>Used when you search from Aither Web.</small></span><select id="engineSelect"><option value="duckduckgo">DuckDuckGo</option><option value="google">Google</option><option value="bing">Bing</option></select></label>
-      <label class="setting toggle-row"><span><b>Open links in a new tab</b><small>Keep Aither Web open while visiting a link.</small></span><input type="checkbox" id="newTabToggle"></label>
-      <button class="danger" id="resetApp">Reset Aither Web</button>
-    </div>
-  </div>
-
-  <div class="toast" id="toast"></div>
-  <script src="app.js"></script>
+  <div class="modal hidden" id="settingsModal" role="dialog" aria-modal="true" aria-labelledby="settingsTitle"><div class="modal-card"><div class="modal-head"><h2 id="settingsTitle">Settings</h2><button class="icon-btn" id="closeSettings">×</button></div><label class="setting"><span><b>Theme</b><small>Choose how Aither Web looks.</small></span><select id="themeSelect"><option value="system">System</option><option value="dark">Dark</option><option value="light">Light</option></select></label><label class="setting"><span><b>Search engine</b><small>Aither Web automatically uses Google.</small></span><select id="engineSelect"><option value="google">Google</option></select></label><label class="setting toggle-row"><span><b>Open links in a new tab</b><small>Keep Aither Web open while visiting a link.</small></span><input type="checkbox" id="newTabToggle"></label><button class="danger" id="resetApp">Reset Aither Web</button></div></div>
+  <div class="toast" id="toast"></div><script src="app.js"></script>
 </body>
 </html>
