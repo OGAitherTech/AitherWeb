@@ -1,44 +1,45 @@
 # Aither Web
 
-Aither Web is a fast, clean, responsive web launchpad for the Aither project family. It works on iPhone, iPad, and desktop browsers and can be hosted directly with GitHub Pages.
+Aither Web is a fast, clean, responsive browser-style web experience for the Aither project family. It works on iPhone, iPad, and desktop browsers and can be hosted directly with GitHub Pages.
 
-## v3
+## v15
 
-- Google is the automatic search engine
-- Browser-style back, forward, and home controls
-- Search/address bar with quick clear button
-- Website addresses open directly
-- Up to 100 local history entries
-- History records searches and website visits with date/time and hostname
-- Delete individual history entries or clear all history
-- Empty-state history screen
-- Quick buttons for Recent History and Bookmarks
-- Quick-link numbering for keyboard-friendly navigation
-- Bookmarks with add/remove controls
+- More reliable live web searching with multiple no-key connection fallbacks
+- Improved result parsing for different response formats
+- Automatic retry option when a search connection fails
+- One-click fallback to open the live search directly
+- Clear connection guidance for mobile users
+- Wi-Fi recommendation for the best search experience
+- Browser-style tabs, navigation, bookmarks, and history
+- Website addresses open directly inside Aither Web when embedding is allowed
 - Dark, light, and system themes
-- Optional new-tab behavior
-- Improved mobile/iPhone layout
-- Polished cards, controls, spacing, hover states, and responsive behavior
+- Force Update with cache-busting
+- Responsive iPhone, iPad, and desktop layout
 - LocalStorage persistence
-- No backend or build step required
+- No search-engine API key required
 
 ## Files
 
 - `index.html` — application structure and browser-style UI
 - `style.css` — responsive Aither Web interface
-- `app.js` — navigation, Google search, bookmarks, history, themes, and settings
+- `app.js` — search, navigation, bookmarks, history, themes, and settings
+- `desktop/` — optional Electron desktop app that loads the GitHub Pages version
 
 ## GitHub Pages
 
 The project is a static website and can be published with GitHub Pages using the `main` branch and repository root (`/`).
 
+## Search & connectivity
+
+Aither Web retrieves live search results through public web-accessible connection fallbacks. Because GitHub Pages is static, the browser cannot directly host a private search backend. Aither Web therefore needs an internet connection for live search and generally works better on Wi-Fi, especially on mobile or weak cellular connections.
+
 ## Privacy
 
-Bookmarks, settings, and history are stored locally in the browser's LocalStorage. Search requests are sent directly to Google when a search is performed.
+Bookmarks, settings, and history are stored locally in the browser's LocalStorage. Search queries are sent to the live search service when a search is performed.
 
 ## Roadmap
 
-Future versions can add tab management, customizable quick links, import/export, keyboard shortcuts, and additional Aither integrations.
+Future versions can add more search sources, customizable quick links, import/export, keyboard shortcuts, downloads, and additional Aither integrations.
 
 ## License
 
