@@ -1,20 +1,9 @@
 {
-  "name": "aither-web-desktop",
-  "version": "1.0.0",
-  "description": "Aither Web desktop browser",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron .",
-    "build": "electron-builder --win --x64"
-  },
-  "devDependencies": {
-    "electron": "latest",
-    "electron-builder": "latest"
-  },
-  "build": {
-    "appId": "tech.aither.aitherweb",
-    "productName": "Aither Web",
-    "files": ["main.js", "preload.js"],
-    "win": { "target": "nsis", "artifactName": "Aither-Web-Setup-${version}.${ext}" }
-  }
+  "name":"aither-web-desktop",
+  "version":"1.1.0",
+  "description":"Aither Web standalone desktop browser",
+  "main":"main.js",
+  "scripts":{"start":"electron .","build":"electron-builder --win --x64"},
+  "devDependencies":{"electron":"latest","electron-builder":"latest"},
+  "build":{"appId":"tech.aither.aitherweb","productName":"Aither Web","files":["main.js","preload.js"],"win":{"target":["nsis","portable"],"artifactName":"Aither-Web-Setup-${version}.${ext}"},"nsis":{"oneClick":false,"allowToChangeInstallationDirectory":true,"createDesktopShortcut":true,"createStartMenuShortcut":true},"portable":{"artifactName":"Aither-Web-Portable-${version}.exe"}}
 }
