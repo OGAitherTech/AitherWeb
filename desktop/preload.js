@@ -1,0 +1,1 @@
+const {contextBridge}=require('electron');contextBridge.exposeInMainWorld('aitherDesktop',{platform:process.platform,version:process.versions.electron});
