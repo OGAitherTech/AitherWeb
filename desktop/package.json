@@ -1,0 +1,20 @@
+{
+  "name": "aither-web-desktop",
+  "version": "1.0.0",
+  "description": "Aither Web desktop browser",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win --x64"
+  },
+  "devDependencies": {
+    "electron": "latest",
+    "electron-builder": "latest"
+  },
+  "build": {
+    "appId": "tech.aither.aitherweb",
+    "productName": "Aither Web",
+    "files": ["main.js", "preload.js"],
+    "win": { "target": "nsis", "artifactName": "Aither-Web-Setup-${version}.${ext}" }
+  }
+}
