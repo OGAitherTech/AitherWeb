@@ -2,19 +2,20 @@
 
 Aither Web is a fast, clean, responsive browser-style web experience for the Aither project family. It works on iPhone, iPad, and desktop browsers and can be hosted directly with GitHub Pages.
 
-## v15
+## v16
 
-- More reliable live web searching with multiple no-key connection fallbacks
-- Improved result parsing for different response formats
-- Automatic retry option when a search connection fails
-- One-click fallback to open the live search directly
-- Clear connection guidance for mobile users
-- Wi-Fi recommendation for the best search experience
+- Fixed Bookmarks and History tab navigation
+- Improved mobile touch targets and tap feedback
+- Added smoother result and interaction animations
+- Added reduced-motion accessibility support
+- Improved mobile safe-area handling for iPhone
+- Added smoother scrolling and scrollbar polish
+- Improved bookmark/history rows on small screens
+- Added iPhone web-app metadata
+- Kept live search connection guidance and Wi-Fi recommendation
 - Browser-style tabs, navigation, bookmarks, and history
-- Website addresses open directly inside Aither Web when embedding is allowed
 - Dark, light, and system themes
 - Force Update with cache-busting
-- Responsive iPhone, iPad, and desktop layout
 - LocalStorage persistence
 - No search-engine API key required
 
@@ -22,6 +23,7 @@ Aither Web is a fast, clean, responsive browser-style web experience for the Ait
 
 - `index.html` — application structure and browser-style UI
 - `style.css` — responsive Aither Web interface
+- `enhancements.css` — v16 touch, accessibility, animation, and mobile polish
 - `app.js` — search, navigation, bookmarks, history, themes, and settings
 - `desktop/` — optional Electron desktop app that loads the GitHub Pages version
 
@@ -37,9 +39,13 @@ Aither Web retrieves live search results through public web-accessible connectio
 
 Bookmarks, settings, and history are stored locally in the browser's LocalStorage. Search queries are sent to the live search service when a search is performed.
 
+## Desktop app
+
+The optional Electron desktop app loads the published GitHub Pages version of Aither Web. This keeps the desktop app synchronized with the web version after the site is deployed. Windows builds can produce an installer and portable executable through the repository's GitHub Actions workflow.
+
 ## Roadmap
 
-Future versions can add more search sources, customizable quick links, import/export, keyboard shortcuts, downloads, and additional Aither integrations.
+Future versions can add customizable quick links, import/export, stronger tab management, downloads, and additional Aither integrations.
 
 ## License
 
