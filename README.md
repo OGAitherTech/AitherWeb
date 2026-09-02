@@ -2,18 +2,22 @@
 
 Aither Web is a fast, clean, responsive browser-style web experience for the Aither project family. It works on iPhone, iPad, and desktop browsers and can be hosted directly with GitHub Pages.
 
-## v16
+## v16.2
 
-- Fixed Bookmarks and History tab navigation
+- Added a real mobile tab switcher for phones
+- Mobile tab overview shows every open tab in a 2-column card layout
+- Shows the active tab clearly
+- Tap a tab card to switch instantly
+- Close individual tabs directly from the mobile overview
+- New Tab button is available inside the mobile tab overview
+- Tab count updates automatically as tabs are opened and closed
+- Mobile tab switcher respects iPhone safe-area insets
 - Improved mobile touch targets and tap feedback
 - Added smoother result and interaction animations
 - Added reduced-motion accessibility support
-- Improved mobile safe-area handling for iPhone
-- Added smoother scrolling and scrollbar polish
-- Improved bookmark/history rows on small screens
-- Added iPhone web-app metadata
-- Kept live search connection guidance and Wi-Fi recommendation
-- Browser-style tabs, navigation, bookmarks, and history
+- Improved mobile scrolling and browser controls
+- Fixed Bookmarks and History tab navigation
+- Live search keeps its Wi-Fi recommendation
 - Dark, light, and system themes
 - Force Update with cache-busting
 - LocalStorage persistence
@@ -23,9 +27,14 @@ Aither Web is a fast, clean, responsive browser-style web experience for the Ait
 
 - `index.html` — application structure and browser-style UI
 - `style.css` — responsive Aither Web interface
-- `enhancements.css` — v16 touch, accessibility, animation, and mobile polish
+- `enhancements.css` — touch, accessibility, animation, and mobile polish
+- `mobile-tabs.js` — mobile tab overview/switcher
 - `app.js` — search, navigation, bookmarks, history, themes, and settings
 - `desktop/` — optional Electron desktop app that loads the GitHub Pages version
+
+## Mobile tabs
+
+On a phone, use the tab button in the browser toolbar to open the tab overview. Each open tab appears as a card. Tap a card to switch to it, use its close button to remove it, or choose **+ New tab** to open the Aither Web home tab.
 
 ## GitHub Pages
 
@@ -45,7 +54,7 @@ The optional Electron desktop app loads the published GitHub Pages version of Ai
 
 ## Roadmap
 
-Future versions can add customizable quick links, import/export, stronger tab management, downloads, and additional Aither integrations.
+Future versions can add tab persistence after closing the app, pinned tabs, private tabs, bookmark folders, downloads UI, and additional Aither integrations.
 
 ## License
 
