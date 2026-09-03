@@ -2,18 +2,20 @@
 
 Aither Web is a fast, clean, responsive browser-style web experience for the Aither project family. It works on iPhone, iPad, and desktop browsers and can be hosted directly with GitHub Pages.
 
-## v17.5
+## v17.7
 
-- Fixed desktop and mobile tab creation
-- Fixed mobile tab-card switching and closing
-- Fixed the mobile tab overview crash caused by an invalid close handler
-- Added working **New Tab** behavior instead of simply returning to Home
-- Added address-bar URL/search handling
-- Added safer tab activation and closing behavior
-- Added tab-change events so the mobile tab counter stays synchronized
-- Fixed the toast timer implementation
-- Updated cache-busting version to v17.5
-- Kept live-search fallbacks, bookmarks, history, downloads, themes, and Force Update
+- Fixed the main search form so submitting a search cannot reload the page
+- Fixed search submission on iPhone and desktop
+- Added an inline search fallback so the Search button remains tied to Aither Web's search handler
+- Added stronger event cancellation for dynamically created search forms
+- Added unique IDs for rapid consecutive searches and website tabs
+- Updated cache-busting version to v17.7
+- Kept live-search fallbacks, bookmarks, history, downloads, themes, tabs, and Force Update
+
+## v17.6
+
+- Improved search form handling and Search Again behavior
+- Kept New Tab, tab switching, closing, and address-bar search behavior
 
 ## Files
 
@@ -27,7 +29,7 @@ Aither Web is a fast, clean, responsive browser-style web experience for the Ait
 
 ## Tabs
 
-Aither Web now has functional browser-style tabs. **+ New Tab** creates a separate blank tab, searches from that tab can open their own result tabs, website results open in separate website tabs, and each tab can be closed without destroying the other open tabs.
+Aither Web has functional browser-style tabs. **+ New Tab** creates a separate blank tab, searches can open their own result tabs, website results open in separate website tabs, and each tab can be closed without destroying the other open tabs.
 
 On a phone, use the overlapping-tab button in the browser toolbar to open the full-screen tab overview. Tap a tab card to switch, use **×** to close a tab, or choose **New Tab** to create another tab.
 
